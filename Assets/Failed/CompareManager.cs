@@ -51,15 +51,15 @@ namespace Assets.Failed
                 if (i + keyCount > valueText.Length) break;
                 
                 var subValue = valueText.Substring(i, keyCount);
-                var subvalueCompare = Convert.ToDouble(subValue);
+                var subValueCompare = Convert.ToDouble(subValue);
                 
                 if (moreThanKey)
                 {
-                    if (subvalueCompare > keyCompare) resultCount += 1;
+                    if (subValueCompare > keyCompare) resultCount += 1;
                 }
                 else
                 {
-                    if (subvalueCompare <= keyCompare) resultCount += 1;
+                    if (subValueCompare <= keyCompare) resultCount += 1;
                 }
             }
 
