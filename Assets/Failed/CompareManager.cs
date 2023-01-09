@@ -44,22 +44,22 @@ namespace Assets.Failed
         {
             var resultCount = 0;
             var keyCount = keyText.Length;
-            var key = Convert.ToDouble(keyText);
+            var keyCompare = Convert.ToDouble(keyText);
 
             for (int i = 0; i < valueText.Length; i++)
             {
                 if (i + keyCount > valueText.Length) break;
                 
                 var subValue = valueText.Substring(i, keyCount);
-                var value = Convert.ToDouble(subValue);
+                var subvalueCompare = Convert.ToDouble(subValue);
                 
                 if (moreThanKey)
                 {
-                    if (value > key) resultCount += 1;
+                    if (subvalueCompare > keyCompare) resultCount += 1;
                 }
                 else
                 {
-                    if (value <= key) resultCount += 1;
+                    if (subvalueCompare <= keyCompare) resultCount += 1;
                 }
             }
 
