@@ -44,6 +44,7 @@ namespace Assets.Coding
             print("Jump");
             rigidbody.AddForce(transform.up * Force, ForceMode.Force);
             
+            // 추후 시간이 되면 제대로된 메커니즘을 설계한
             yield return new WaitForSeconds(waitTime);
 
             isJumping = false;

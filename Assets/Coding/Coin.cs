@@ -17,8 +17,7 @@ namespace Assets.Coding
         private void OnTriggerEnter(Collider other)
         {
             gameObject.SetActive(false);
-
-
+            
             PlusScore();
             Effect();
         }

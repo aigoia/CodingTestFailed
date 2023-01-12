@@ -7,15 +7,12 @@ namespace Assets.Coding
     {
         AudioManager _audioManager;
         public bool isMute = false;
-
-
         public float saveVolume = 0;
         
         void Awake()
         {
             _audioManager = FindObjectOfType<AudioManager>();
         }
-
         
         void Update()
         {
@@ -28,11 +25,9 @@ namespace Assets.Coding
                 }
                 else
                 {
-                    
                     Mute();
                     isMute = false;
                 }
-                
             }
         }
 
