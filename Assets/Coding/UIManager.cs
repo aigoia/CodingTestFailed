@@ -10,7 +10,7 @@ namespace Assets.Coding
 
         void Awake()
         {
-            
+            scoreText = transform.Find("Score").GetComponent<TextMeshProUGUI>();
         }
     }
 }

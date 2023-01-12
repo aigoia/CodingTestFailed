@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdca0a3bdb6c429494c797bbf4fecf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 1004861317}
+  scoreText: {fileID: 1004861317}
   Score: 0
 --- !u!1 &343322998 stripped
 GameObject:
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinScore: 100
+  coinScore: 100
 --- !u!136 &343323001
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinScore: 100
+  coinScore: 100
 --- !u!136 &366639539
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -438,6 +438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b56f6dfaf722f56ae429db4c082cbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMute: 0
+  saveVolume: 0
 --- !u!1 &576500833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2372044863293852132, guid: c79c1d683787b948b881a46874ab8004, type: 3}
@@ -634,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinScore: 100
+  coinScore: 100
 --- !u!136 &683955599
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1014,8 +1016,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 826871590}
-  Force: 500
-  Distace: 1000
+  force: 500
+  distace: 1000
   isJumping: 0
   waitTime: 2
   goDistance: 1000
@@ -1195,7 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinScore: 100
+  coinScore: 100
 --- !u!136 &888956994
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6105,7 +6107,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1004861316}
   - component: {fileID: 1004861318}
-  - component: {fileID: 1004861319}
   - component: {fileID: 1004861317}
   m_Layer: 5
   m_Name: Score
@@ -6231,20 +6232,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004861315}
   m_CullTransparentMesh: 1
---- !u!114 &1004861319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004861315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fdca0a3bdb6c429494c797bbf4fecf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreText: {fileID: 0}
-  Score: 0
 --- !u!1 &1080395092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2871689920625677393, guid: c79c1d683787b948b881a46874ab8004, type: 3}
@@ -6286,7 +6273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinScore: 100
+  coinScore: 100
 --- !u!136 &1161080305
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6356,7 +6343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinScore: 100
+  coinScore: 100
 --- !u!136 &1206000523
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6658,6 +6645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 0}
   randomSoundList: []
+  Source: {fileID: 0}
   menu: {fileID: 0}
   wait: {fileID: 0}
   open: {fileID: 0}
