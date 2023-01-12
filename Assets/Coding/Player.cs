@@ -20,11 +20,6 @@ namespace Assets.Coding
             
         }
 
-        void Start()
-        {
-            
-        }
-
         void Update()
         {
             if (Input.GetMouseButtonDown(0))

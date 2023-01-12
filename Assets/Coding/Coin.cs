@@ -5,7 +5,7 @@ namespace Assets.Coding
 {
     public class Coin : MonoBehaviour
     {
-        public int CoinScore = 100;
+        public int coinScore = 100;
         
         private UIManager _uiManager;
 
@@ -24,8 +24,8 @@ namespace Assets.Coding
 
         void PlusScore()
         {
-            _uiManager.Score += CoinScore;
-            _uiManager.ScoreText.text = _uiManager.Score.ToString();
+            _uiManager.Score += coinScore;
+            _uiManager.scoreText.text = _uiManager.Score.ToString();
         }
 
         void Effect()
