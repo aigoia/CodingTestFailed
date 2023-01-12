@@ -6,8 +6,8 @@ namespace Assets.Coding
     public class Player : MonoBehaviour
     {
         public Rigidbody rigidbody;
-        public float Force = 500;
-        public float Distace = 1000;
+        public float force = 500;
+        public float distace = 1000;
         public bool isJumping = false;
         public float waitTime = 2f;
         public float goDistance = 1000f;
@@ -17,7 +17,6 @@ namespace Assets.Coding
         void Awake()
         {
             rigidbody = GetComponent<Rigidbody>();
-            
         }
 
         void Update()
@@ -37,7 +36,7 @@ namespace Assets.Coding
         {
             isJumping = true;
             print("Jump");
-            rigidbody.AddForce(transform.up * Force, ForceMode.Force);
+            rigidbody.AddForce(transform.up * force, ForceMode.Force);
             
             // 추후 시간이 되면 제대로된 메커니즘을 설계한다 
             yield return new WaitForSeconds(waitTime);
