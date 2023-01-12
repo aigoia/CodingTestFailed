@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Audio;
-using Random = UnityEngine.Random;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 namespace Game.Menu
 {
