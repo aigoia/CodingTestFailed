@@ -9,7 +9,11 @@ namespace Game.Menu
     
     public class AudioManager : MonoBehaviour
     {
-        public AudioSource Source;
-        
+        public AudioSource source;
+
+        void Awake()
+        {
+            source = GetComponent<AudioSource>();
+        }
     }
 }

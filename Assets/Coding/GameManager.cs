@@ -33,7 +33,7 @@ namespace Assets.Coding
 
         void SaveVolume()
         {
-            saveVolume = _audioManager.Source.volume;
+            saveVolume = _audioManager.source.volume;
         }
 
         void Mute()
