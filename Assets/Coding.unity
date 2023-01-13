@@ -6643,22 +6643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afb39622fa46045db57e1c6c45a3208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  randomSoundList: []
-  Source: {fileID: 0}
-  menu: {fileID: 0}
-  wait: {fileID: 0}
-  open: {fileID: 0}
-  battleBase: {fileID: 0}
-  battleStillness: {fileID: 0}
-  battleDynamic: {fileID: 0}
-  click: 0
-  durationTime: 1
-  waitTime: 1.5
-  waitMoreTime: 1.5
-  delayTime: 5
-  enemyMove: 1
-  fastMove: 0
+  source: {fileID: 1612377297}
 --- !u!4 &1612377299
 Transform:
   m_ObjectHideFlags: 0
