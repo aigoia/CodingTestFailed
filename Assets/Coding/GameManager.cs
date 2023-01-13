@@ -21,12 +21,12 @@ namespace Assets.Coding
                 if (isMute)
                 {
                     UnMute();
-                    isMute = true;
+                    isMute = false;
                 }
                 else
                 {
                     Mute();
-                    isMute = false;
+                    isMute = true;
                 }
             }
         }
