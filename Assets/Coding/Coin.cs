@@ -13,7 +13,7 @@ namespace Assets.Coding
             _uiManager = FindObjectOfType<UIManager>();
         }
         
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             gameObject.SetActive(false);
             

@@ -13,10 +13,14 @@ namespace Assets.Coding
         public float goDistance = 1000f;
         public float goTime = 5f;
         public float speed = 20f;
+
+        public bool isRight = true;
+        public Transform gunShip;
         
         void Awake()
         {
             rigidbody = GetComponent<Rigidbody>();
+            gunShip = transform.Find("GunShip");
         }
 
         void Update()
@@ -28,17 +32,30 @@ namespace Assets.Coding
                     StartCoroutine(Jump());
                 }
             }
+
+            if (isRight)
+            {
+                GoAhead(Vector3.right);    
+            }
+            else
+            {
+                GoAhead(Vector3.left);
+            }
             
-            transform.Translate(Vector3.forward * Time.deltaTime * speed);
+            transform.rotation = Quaternion.Euler(Vector3.zero);
         }
 
+        void GoAhead(Vector3 direction)
+        {
+            transform.Translate(direction * Time.deltaTime * speed);
+        }
+        
         IEnumerator Jump()
         {
             isJumping = true;
             print("Jump");
             rigidbody.AddForce(transform.up * force, ForceMode.Force);
             
-            // 추후 시간이 되면 제대로된 메커니즘을 설계한다 
             yield return new WaitForSeconds(waitTime);
 
             isJumping = false;
