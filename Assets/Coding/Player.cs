@@ -33,15 +33,7 @@ namespace Assets.Coding
                 }
             }
 
-            if (isRight)
-            {
-                GoAhead(Vector3.right);    
-            }
-            else
-            {
-                GoAhead(Vector3.left);
-            }
-            
+            GoAhead(isRight ? Vector3.right : Vector3.left);
             transform.rotation = Quaternion.Euler(Vector3.zero);
         }
 
