@@ -26,6 +26,12 @@ namespace Assets.Jump
 
         void Update()
         {
+            Click();
+            GoAhead(IsRight ? Vector3.right : Vector3.left);
+        }
+
+        void Click()
+        {
             if (Input.GetMouseButtonDown(0))
             {
                 if (IsJumping == false)
@@ -33,14 +39,12 @@ namespace Assets.Jump
                     StartCoroutine(Jump());
                 }
             }
-
-            GoAhead(IsRight ? Vector3.right : Vector3.left);
-            transform.rotation = Quaternion.Euler(Vector3.zero);
         }
 
         void GoAhead(Vector3 direction)
         {
             transform.Translate(direction * Time.deltaTime * Speed);
+            transform.rotation = Quaternion.Euler(Vector3.zero);
         }
         
         IEnumerator Jump()
