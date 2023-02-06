@@ -5,12 +5,12 @@ namespace Assets.Coding
 {
     public class UIManager : MonoBehaviour
     {
-        public TextMeshProUGUI scoreText;
+        public TextMeshProUGUI ScoreText;
         public int Score = 0;
 
         void Awake()
         {
-            scoreText = transform.Find("Score").GetComponent<TextMeshProUGUI>();
+            ScoreText = transform.Find("Score").GetComponent<TextMeshProUGUI>();
         }
     }
 }

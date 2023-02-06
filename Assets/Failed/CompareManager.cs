@@ -11,7 +11,7 @@ namespace Assets.Failed
         InputField _value;
         InputField _key;
         
-        public int inputLimit = 18;
+        public readonly int InputLimit = 18;
 
         private void Awake()
         {
@@ -25,7 +25,7 @@ namespace Assets.Failed
         {
             if (_value.text == "") return;
             if (_key.text == "") return;
-            if (_value.text.Length > inputLimit || _key.text.Length > inputLimit)
+            if (_value.text.Length > InputLimit || _key.text.Length > InputLimit)
             {
                 Reset();
                 return;

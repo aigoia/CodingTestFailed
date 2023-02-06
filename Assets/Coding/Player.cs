@@ -5,53 +5,53 @@ namespace Assets.Coding
 {
     public class Player : MonoBehaviour
     {
-        public Rigidbody rigidbody;
-        public float force = 500;
-        public float distace = 1000;
-        public bool isJumping = false;
-        public float waitTime = 2f;
-        public float goDistance = 1000f;
-        public float goTime = 5f;
-        public float speed = 20f;
+        Rigidbody _rigidbody;
 
-        public bool isRight = true;
-        public Transform gunShip;
+        public readonly float Force = 500;
+        public readonly float Distance = 1000;
+        public readonly float WaitTime = 2f;
+        public readonly float GoDistance = 1000f;
+        public readonly float GoTime = 5f;
+        public readonly float Speed = 20f;
+        
+        public bool IsJumping = false;
+        public bool IsRight = true;
+        public Transform GunShip;
         
         void Awake()
         {
-            rigidbody = GetComponent<Rigidbody>();
-            gunShip = transform.Find("GunShip");
+            _rigidbody = GetComponent<Rigidbody>();
+            GunShip = transform.Find("GunShip");
         }
 
         void Update()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (isJumping == false)
+                if (IsJumping == false)
                 {
                     StartCoroutine(Jump());
                 }
             }
 
-            GoAhead(isRight ? Vector3.right : Vector3.left);
+            GoAhead(IsRight ? Vector3.right : Vector3.left);
             transform.rotation = Quaternion.Euler(Vector3.zero);
         }
 
         void GoAhead(Vector3 direction)
         {
-            transform.Translate(direction * Time.deltaTime * speed);
+            transform.Translate(direction * Time.deltaTime * Speed);
         }
         
         IEnumerator Jump()
         {
-            isJumping = true;
+            IsJumping = true;
             print("Jump");
-            rigidbody.AddForce(transform.up * force, ForceMode.Force);
+            _rigidbody.AddForce(transform.up * Force, ForceMode.Force);
             
-            yield return new WaitForSeconds(waitTime);
+            yield return new WaitForSeconds(WaitTime);
 
-            isJumping = false;
-
+            IsJumping = false;
         }
     }
 }

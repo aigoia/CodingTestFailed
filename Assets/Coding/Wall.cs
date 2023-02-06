@@ -6,7 +6,6 @@ namespace Assets.Coding
     {
         Player _player;
         
-        
         void Awake()
         {
             _player = FindObjectOfType<Player>();
@@ -14,8 +13,8 @@ namespace Assets.Coding
 
         void OnTriggerEnter(Collider other)
         {
-            _player.isRight = !_player.isRight;
-            _player.gunShip.rotation = Quaternion.Euler(-_player.gunShip.rotation.eulerAngles);
+            _player.IsRight = !_player.IsRight;
+            _player.GunShip.rotation = Quaternion.Euler(-_player.GunShip.rotation.eulerAngles);
         }
     }
 }

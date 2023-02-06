@@ -4,10 +4,9 @@ namespace Assets.Coding
 {
     public class Coin : MonoBehaviour
     {
-        public int coinScore = 100;
+        public readonly int CoinScore = 100;
+        UIManager _uiManager;
         
-        private UIManager _uiManager;
-
         void Awake()
         {
             _uiManager = FindObjectOfType<UIManager>();
@@ -20,16 +19,16 @@ namespace Assets.Coding
             PlusScore();
             Effect();
         }
-
+        
         void PlusScore()
         {
-            _uiManager.Score += coinScore;
-            _uiManager.scoreText.text = _uiManager.Score.ToString();
+            _uiManager.Score += CoinScore;
+            _uiManager.ScoreText.text = _uiManager.Score.ToString();
         }
 
         void Effect()
         {
-            
+            // add Effect
         }
     }
 }

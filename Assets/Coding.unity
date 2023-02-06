@@ -183,16 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53f77e7371caa01b99bcda447a1adab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 0}
-  force: 500
-  distace: 1000
-  isJumping: 0
-  waitTime: 2
-  goDistance: 1000
-  goTime: 5
-  speed: 15
-  isRight: 1
-  gunShip: {fileID: 826871591}
+  IsJumping: 0
+  IsRight: 1
+  GunShip: {fileID: 0}
 --- !u!4 &8985091
 Transform:
   m_ObjectHideFlags: 0
@@ -208,7 +201,7 @@ Transform:
   - {fileID: 826871591}
   - {fileID: 1748753324}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &231481103
 PrefabInstance:
@@ -293,7 +286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &231481107
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -423,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdca0a3bdb6c429494c797bbf4fecf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1004861317}
+  ScoreText: {fileID: 1004861317}
   Score: 0
 --- !u!1 &343322998 stripped
 GameObject:
@@ -447,7 +439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &343323001
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -540,7 +531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &366639539
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -643,7 +633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &460476815
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -741,7 +730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &476830324
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -929,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b56f6dfaf722f56ae429db4c082cbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinType: 4
+  _coinType: 0
 --- !u!1 &576500833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2372044863293852132, guid: c79c1d683787b948b881a46874ab8004, type: 3}
@@ -1126,7 +1114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &683955599
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1378,7 +1365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &808664212
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1730,7 +1716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &888956994
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6725,7 +6710,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004861315
 GameObject:
@@ -6903,7 +6888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &1161080305
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6973,7 +6957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &1206000523
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7155,7 +7138,7 @@ Transform:
   - {fileID: 523208607}
   - {fileID: 1584931887}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464380794 stripped
 GameObject:
@@ -7305,150 +7288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9613dfb594e7e88a22c25b645d55dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1612377296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1612377299}
-  - component: {fileID: 1612377298}
-  - component: {fileID: 1612377297}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1612377297
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612377296}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1612377298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612377296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1afb39622fa46045db57e1c6c45a3208, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 1612377297}
-  isMute: 0
-  saveVolume: 0
---- !u!4 &1612377299
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612377296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1640586454 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5046504121592246657, guid: c79c1d683787b948b881a46874ab8004, type: 3}
@@ -7551,7 +7390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &1669930085
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7722,7 +7560,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1708333519 stripped
 GameObject:
@@ -7928,7 +7766,7 @@ Transform:
   - {fileID: 1669930082}
   - {fileID: 231481104}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935264393 stripped
 GameObject:
@@ -8131,7 +7969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d0ddacd3cb0548694f3cf16e406e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinScore: 100
 --- !u!136 &1982536746
 CapsuleCollider:
   m_ObjectHideFlags: 0
