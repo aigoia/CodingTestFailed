@@ -6,6 +6,7 @@ namespace Assets.Jump
     public class Player : MonoBehaviour
     {
         Rigidbody _rigidbody;
+        public Transform GunShip;
 
         public readonly float Force = 500;
         public readonly float Distance = 1000;
@@ -16,7 +17,8 @@ namespace Assets.Jump
         
         public bool IsJumping = false;
         public bool IsRight = true;
-        public Transform GunShip;
+        
+        
         
         void Awake()
         {
