@@ -11,7 +11,7 @@ namespace Assets.Failed
         InputField _value;
         InputField _key;
         
-        public readonly int InputLimit = 18;
+        public readonly int InputLimit = 16;
 
         private void Awake()
         {
