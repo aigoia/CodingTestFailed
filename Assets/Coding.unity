@@ -929,6 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b56f6dfaf722f56ae429db4c082cbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinType: 4
 --- !u!1 &576500833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2372044863293852132, guid: c79c1d683787b948b881a46874ab8004, type: 3}
