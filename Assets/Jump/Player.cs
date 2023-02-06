@@ -9,10 +9,7 @@ namespace Assets.Jump
         public Transform GunShip;
 
         public readonly float Force = 500;
-        public readonly float Distance = 1000;
         public readonly float WaitTime = 2f;
-        public readonly float GoDistance = 1000f;
-        public readonly float GoTime = 5f;
         public readonly float Speed = 20f;
         
         public bool IsJumping = false;
