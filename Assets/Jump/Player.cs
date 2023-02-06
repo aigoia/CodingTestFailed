@@ -18,8 +18,6 @@ namespace Assets.Jump
         public bool IsJumping = false;
         public bool IsRight = true;
         
-        
-        
         void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
