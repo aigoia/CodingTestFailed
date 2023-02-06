@@ -22,10 +22,11 @@ namespace Assets.Jump
         
         void Start()
         {
-            SetCoinColor();
+            SetDifficult();
+            SetColor();
         }
 
-        void SetCoinColor()
+        void SetDifficult()
         {
             void Normal()
             {
@@ -42,7 +43,7 @@ namespace Assets.Jump
                 print("Hard");
             }
             
-            Action coinColor = _difficultType switch
+            Action setDifficult = _difficultType switch
             {
                 CoinType.Normal => Normal,
                 CoinType.Easy => Easy,
@@ -50,7 +51,12 @@ namespace Assets.Jump
                 _ => Normal
             };
             
-            coinColor!.Invoke();
+            setDifficult!.Invoke();
+        }
+
+        void SetColor()
+        {
+            // set color
         }
         
     }
