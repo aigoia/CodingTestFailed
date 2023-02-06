@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsJumping: 0
   IsRight: 1
-  GunShip: {fileID: 0}
+  GunShip: {fileID: 826871591}
 --- !u!4 &8985091
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinType: 0
+  Coins: []
 --- !u!1 &591756873
 GameObject:
   m_ObjectHideFlags: 0

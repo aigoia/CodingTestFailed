@@ -1,20 +1,23 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Action = System.Action;
 
 namespace Assets.Jump
 {
     public enum CoinType
-    {
-        Red, Blue, Yellow, Green
+    { 
+        Normal, Easy, Hard
     }
     
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] CoinType _coinType;
+        [SerializeField] CoinType _difficultType;
+        public List<Coin> Coins;
         
         void Awake()
         {
-            
+            Coins = FindObjectsOfType<Coin>().ToList();
         }
         
         void Start()
@@ -24,33 +27,27 @@ namespace Assets.Jump
 
         void SetCoinColor()
         {
-            void Red()
+            void Normal()
             {
-                print("Red");
+                print("Normal");
             }
             
-            void Blue()
+            void Easy()
             {
-                print("Blue");
+                print("Easy");
             }
             
-            void Yellow()
+            void Hard()
             {
-                print("Yellow");
-            }
-
-            void Green()
-            {
-                print("Green");
+                print("Hard");
             }
             
-            Action coinColor = _coinType switch
+            Action coinColor = _difficultType switch
             {
-                CoinType.Red => Red,
-                CoinType.Blue => Blue,
-                CoinType.Yellow => Yellow,
-                CoinType.Green => Green,
-                _ => Red
+                CoinType.Normal => Normal,
+                CoinType.Easy => Easy,
+                CoinType.Hard => Hard,
+                _ => Normal
             };
             
             coinColor!.Invoke();

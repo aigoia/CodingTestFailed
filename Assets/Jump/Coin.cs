@@ -28,7 +28,7 @@ namespace Assets.Jump
 
         void Effect()
         {
-            // add Effect
+            // add effect any time
         }
     }
 }

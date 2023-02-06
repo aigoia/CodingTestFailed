@@ -25,6 +25,7 @@ namespace Assets.Failed
         {
             if (_value.text == "") return;
             if (_key.text == "") return;
+            
             if (_value.text.Length > InputLimit || _key.text.Length > InputLimit)
             {
                 Reset();
